@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Briefcase-Version: 0.3.25
+Name: backendsim
+Formal-Name: Backend Developer Simulator
+App-ID: org.example.backendsim
+Version: 1.0.0
+Home-page: https://example.com/backendsim
+Download-URL: https://example.com/backendsim
+Author: Your Name
+Author-email: your@email.com
+Summary: Симулятор бэкенд-разработчика
