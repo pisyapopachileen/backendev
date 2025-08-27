@@ -9,7 +9,7 @@ description = "Симулятор бэкенд-разработчика"
 readme = "README.md"
 requires-python = ">=3.8"
 dependencies = [
-    "toga",
+    "toga-android",
 ]
 
 [project.license]
@@ -33,7 +33,7 @@ formal_name = "Backendev"
 description = "Симулятор бэкенд-разработчика"
 sources = ["src/Backendev"]
 requires = [
-    "toga",
+    "toga-android",
 ]
 
 [tool.briefcase.app.backendev.android]
@@ -45,4 +45,5 @@ permissions = [
 [tool.briefcase.app.backendev.android.sdk]
 api_level = 31
 min_api_level = 21
+
 target_api_level = 33
