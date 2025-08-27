@@ -3,6 +3,9 @@ import time
 from collections import deque
 from sklearn.linear_model import LinearRegression
 
+import os
+os.environ["TOGA_BACKEND"] = "toga_android"
+
 import toga
 from toga.style import Pack
 from toga.style.pack import COLUMN, ROW, CENTER
@@ -356,3 +359,4 @@ def main():
 if __name__ == '__main__':
     app = main()
     app.main_loop()
+
