@@ -1,0 +1,48 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "backendev"
+version = "1.0.0"
+description = "Симулятор бэкенд-разработчика"
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "toga",
+]
+
+[project.license]
+file = "LICENSE"
+
+authors = [
+    { name = "Ваше Имя", email = "your@email.com" }
+]
+
+[project.urls]
+Homepage = "https://github.com/yourname/backendev"
+
+[tool.briefcase]
+project_name = "Backendev"
+bundle = "org.example"
+version = "1.0.0"
+url = "https://github.com/yourname/backendev"
+
+[tool.briefcase.app.backendev]
+formal_name = "Backendev"
+description = "Симулятор бэкенд-разработчика"
+sources = ["src/Backendev"]
+requires = [
+    "toga",
+]
+
+[tool.briefcase.app.backendev.android]
+icon = "resources/icon.png"
+permissions = [
+    "INTERNET",
+]
+
+[tool.briefcase.app.backendev.android.sdk]
+api_level = 31
+min_api_level = 21
+target_api_level = 33
