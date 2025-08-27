@@ -1,0 +1,275 @@
+Date/Time:       2025-08-26 23:33:43 
+Command line:    C:\Python313\Scripts\briefcase dev
+
+OS Release:      Windows 11
+OS Version:      10.0.22621
+Architecture:    AMD64
+Platform:        Windows-11-10.0.22621-SP0
+
+Python exe:      C:\Python313\python.exe
+Python version:  3.13.5 (tags/v3.13.5:6cb20a2, Jun 11 2025, 16:15:46) [MSC v.1943 64 bit (AMD64)]
+Virtual env:     False
+Conda env:       False
+
+Briefcase:       0.3.25
+Target platform: windows
+Target format:   app
+
+Environment Variables:
+	ALLUSERSPROFILE=C:\ProgramData
+	APPDATA=C:\Users\User\AppData\Roaming
+	COMMONPROGRAMFILES=C:\Program Files\Common Files
+	COMMONPROGRAMFILES(X86)=C:\Program Files (x86)\Common Files
+	COMMONPROGRAMW6432=C:\Program Files\Common Files
+	COMPUTERNAME=DESKTOP-9AGQR6R
+	COMSPEC=C:\Windows\system32\cmd.exe
+	DRIVERDATA=C:\Windows\System32\Drivers\DriverData
+	EFC_6476=0
+	FARGODATAPATH=C:\Users\User\Documents\My Games\Terraria\tModLoader\Dev
+	FPS_BROWSER_APP_PROFILE_STRING=Internet Explorer
+	FPS_BROWSER_USER_PROFILE_STRING=Default
+	HOMEDRIVE=C:
+	HOMEPATH=\Users\User
+	INTELLIJ IDEA=C:\Program Files\JetBrains\IntelliJ IDEA 2023.2.2\bin;
+	JAVA_HOME=C:\Java\jdk-21\bin
+	LOCALAPPDATA=C:\Users\User\AppData\Local
+	LOGONSERVER=\\DESKTOP-9AGQR6R
+	NUMBER_OF_PROCESSORS=6
+	OS=Windows_NT
+	PATH=C:\Python313\Scripts\;C:\Python313\;C:\Program Files\Eclipse Adoptium\jdk-17.0.8.7-hotspot\bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Python311\Scripts\;C:\Python311\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Java\jdk-21\bin\bin;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\dotnet\;C:\Program Files\Git\cmd;C:\Users\User\AppData\Local\Microsoft\WindowsApps;C:\Users\User\.dotnet\tools;C:\Users\User\AppData\Local\GitHubDesktop\bin;C:\Program Files\JetBrains\IntelliJ IDEA 2023.2.2\bin;;C:\Users\User\AppData\Local\JetBrains\Toolbox\scripts;C:\Users\User\.dotnet\tools;C:\Program Files\JetBrains\PyCharmCE 2025.1.1.1\bin;
+	PATHEXT=.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW
+	PROCESSOR_ARCHITECTURE=AMD64
+	PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 158 Stepping 10, GenuineIntel
+	PROCESSOR_LEVEL=6
+	PROCESSOR_REVISION=9e0a
+	PROGRAMDATA=C:\ProgramData
+	PROGRAMFILES=C:\Program Files
+	PROGRAMFILES(X86)=C:\Program Files (x86)
+	PROGRAMW6432=C:\Program Files
+	PROMPT=$P$G
+	PSMODULEPATH=C:\Program Files\WindowsPowerShell\Modules;C:\Windows\system32\WindowsPowerShell\v1.0\Modules
+	PUBLIC=C:\Users\Public
+	PYCHARM=C:\Program Files\JetBrains\PyCharmCE 2025.1.1.1\bin;
+	SESSIONNAME=Console
+	SYSTEMDRIVE=C:
+	SYSTEMROOT=C:\Windows
+	TEMP=C:\Users\User\AppData\Local\Temp
+	TMP=C:\Users\User\AppData\Local\Temp
+	USERDOMAIN=DESKTOP-9AGQR6R
+	USERDOMAIN_ROAMINGPROFILE=DESKTOP-9AGQR6R
+	USERNAME=User
+	USERPROFILE=C:\Users\User
+	WINDIR=C:\Windows
+	WOTGDATAPATH=C:\Users\User\Documents\My Games\Terraria\tModLoader\Dev
+
+pyproject.toml:
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "backend-developer-simulator"
+version = "1.0.0"
+description = "Симулятор бэкенд-разработчика"
+requires-python = ">=3.8"
+dependencies = [
+    "toga",
+    "scikit-learn",
+    "numpy"
+]
+
+[tool.briefcase]
+project_name = "Backend Developer Simulator"
+bundle = "org.example"
+version = "1.0.0"
+url = "https://example.com/backendsim"
+license = "MIT"
+author = "Your Name"
+author_email = "your@email.com"
+
+[tool.briefcase.app.backendsim]
+formal_name = "Backend Developer Simulator"
+description = "Симулятор бэкенд-разработчика"
+sources = ["src/backendsim"]
+requires = [
+    "scikit-learn",
+    "numpy"
+]
+
+[tool.briefcase.app.backendsim.android]
+requires = [
+    "scikit-learn==1.2.2",
+    "numpy==1.24.2"
+]
+
+[tool.briefcase.app.backendsim.ios]
+requires = [
+    "scikit-learn==1.2.2", 
+    "numpy==1.24.2"
+]
+
+Briefcase Log:
+[23:33:41]                                                                                                                                                             config.py:666
+           *************************************************************************                                                                                   config.py:666
+           ** WARNING: License Definition for the Project is Deprecated           **                                                                                   config.py:666
+           *************************************************************************                                                                                   config.py:666
+                                                                                                                                                                       config.py:666
+               Briefcase now uses PEP 621 format for license definitions.                                                                                              config.py:666
+                                                                                                                                                                       config.py:666
+               Previously, the name of the license was assigned to the 'license'                                                                                       config.py:666
+               field in pyproject.toml. For PEP 621, the name of the license is                                                                                        config.py:666
+               assigned to 'license.text' or the name of the file containing the                                                                                       config.py:666
+               license is assigned to 'license.file'.                                                                                                                  config.py:666
+                                                                                                                                                                       config.py:666
+               The current configuration for the Project has a 'license' field                                                                                         config.py:666
+               that is specified as a string:                                                                                                                          config.py:666
+                                                                                                                                                                       config.py:666
+                   license = "MIT"                                                                                                                                     config.py:666
+                                                                                                                                                                       config.py:666
+               To use the PEP 621 format (and to remove this warning), specify that                                                                                    config.py:666
+               the LICENSE file contains the license for the Project:                                                                                                  config.py:666
+                                                                                                                                                                       config.py:666
+                   license.file = "LICENSE"                                                                                                                            config.py:666
+                                                                                                                                                                       config.py:666
+           *************************************************************************                                                                                   config.py:666
+                                                                                                                                                                          dev.py:238
+           [backendsim] Installing requirements...                                                                                                                        dev.py:238
+           Installing dev requirements... started                                                                                                                          dev.py:89
+                                                                                                                                                                   subprocess.py:838
+           >>> Running Command:                                                                                                                                    subprocess.py:838
+           >>>     'C:\Python313\python.exe' -u -X utf8 -m pip install --upgrade toga scikit-learn numpy scikit-learn numpy                                        subprocess.py:838
+           >>> Working Directory:                                                                                                                                  subprocess.py:838
+           >>>     C:\Users\User\Backendev                                                                                                                         subprocess.py:838
+[23:33:42] Requirement already satisfied: toga in c:\python313\lib\site-packages (0.5.2)                                                                           subprocess.py:195
+           Requirement already satisfied: scikit-learn in c:\python313\lib\site-packages (1.7.1)                                                                   subprocess.py:195
+           Requirement already satisfied: numpy in c:\python313\lib\site-packages (2.3.2)                                                                          subprocess.py:195
+           Requirement already satisfied: toga-winforms==0.5.2 in c:\python313\lib\site-packages (from toga) (0.5.2)                                               subprocess.py:195
+           Requirement already satisfied: pythonnet>=3.0.0 in c:\python313\lib\site-packages (from toga-winforms==0.5.2->toga) (3.0.5)                             subprocess.py:195
+           Requirement already satisfied: toga-core==0.5.2 in c:\python313\lib\site-packages (from toga-winforms==0.5.2->toga) (0.5.2)                             subprocess.py:195
+           Requirement already satisfied: pillow>=10.0.0 in c:\python313\lib\site-packages (from toga-winforms==0.5.2->toga) (11.3.0)                              subprocess.py:195
+           Requirement already satisfied: travertino==0.5.2 in c:\python313\lib\site-packages (from toga-core==0.5.2->toga-winforms==0.5.2->toga) (0.5.2)          subprocess.py:195
+           Requirement already satisfied: scipy>=1.8.0 in c:\python313\lib\site-packages (from scikit-learn) (1.16.1)                                              subprocess.py:195
+           Requirement already satisfied: joblib>=1.2.0 in c:\python313\lib\site-packages (from scikit-learn) (1.5.1)                                              subprocess.py:195
+           Requirement already satisfied: threadpoolctl>=3.1.0 in c:\python313\lib\site-packages (from scikit-learn) (3.6.0)                                       subprocess.py:195
+           Requirement already satisfied: clr_loader<0.3.0,>=0.2.7 in c:\python313\lib\site-packages (from pythonnet>=3.0.0->toga-winforms==0.5.2->toga)           subprocess.py:195
+           (0.2.7.post0)                                                                                                                                                            
+           Requirement already satisfied: cffi>=1.17 in c:\python313\lib\site-packages (from                                                                       subprocess.py:195
+           clr_loader<0.3.0,>=0.2.7->pythonnet>=3.0.0->toga-winforms==0.5.2->toga) (1.17.1)                                                                                         
+           Requirement already satisfied: pycparser in c:\python313\lib\site-packages (from                                                                        subprocess.py:195
+           cffi>=1.17->clr_loader<0.3.0,>=0.2.7->pythonnet>=3.0.0->toga-winforms==0.5.2->toga) (2.22)                                                                               
+[23:33:43] >>> Return code: 0                                                                                                                                      subprocess.py:838
+                                                                                                                                                                   subprocess.py:838
+           Installing dev requirements... done                                                                                                                             dev.py:89
+                                                                                                                                                                          dev.py:248
+           [backendsim] Starting in dev mode...                                                                                                                           dev.py:248
+                                                                                                                                                                   subprocess.py:838
+           >>> Running Command:                                                                                                                                    subprocess.py:838
+           >>>     'C:\Python313\python.exe' -c 'import runpy, sys;sys.path.pop(0);sys.argv.extend([]);runpy.run_module("backendsim", run_name="__main__",         subprocess.py:838
+           alter_sys=True)'                                                                                                                                                         
+           >>> Working Directory:                                                                                                                                  subprocess.py:838
+           >>>     C:\Users\User                                                                                                                                   subprocess.py:838
+           >>> Environment Overrides:                                                                                                                              subprocess.py:838
+           >>>     PYTHONPATH=C:\Users\User\Backendev\src                                                                                                          subprocess.py:838
+           >>>     PYTHONMALLOC=default                                                                                                                            subprocess.py:838
+           >>>     PYTHONUNBUFFERED=1                                                                                                                              subprocess.py:838
+           >>>     PYTHONDEVMODE=1                                                                                                                                 subprocess.py:838
+           >>>     PYTHONUTF8=1                                                                                                                                    subprocess.py:838
+           ===========================================================================                                                                                    run.py:169
+           Traceback (most recent call last):                                                                                                                      subprocess.py:195
+             File "<string>", line 1, in <module>                                                                                                                  subprocess.py:195
+               import runpy, sys;sys.path.pop(0);sys.argv.extend([]);runpy.run_module("backendsim", run_name="__main__", alter_sys=True)                           subprocess.py:195
+                                                                     ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^                           subprocess.py:195
+             File "<frozen runpy>", line 222, in run_module                                                                                                        subprocess.py:195
+             File "<frozen runpy>", line 142, in _get_module_details                                                                                               subprocess.py:195
+           ImportError: No module named backendsim                                                                                                                 subprocess.py:195
+                                                                                                                                                                      __main__.py:42
+           Problem running app backendsim.                                                                                                                            __main__.py:43
+           Saving log... started                                                                                                                                      console.py:438
+
+Main thread traceback:
+┌─────────────────────────────────────────────────────────────────────── Traceback (most recent call last) ────────────────────────────────────────────────────────────────────────┐
+│ C:\Python313\Lib\site-packages\briefcase\__main__.py:27 in main                                                                                                                  │
+│                                                                                                                                                                                  │
+│   24 │   │   │   Path.cwd() / "pyproject.toml",                                                                                                                                  │
+│   25 │   │   │   overrides=overrides,                                                                                                                                            │
+│   26 │   │   )                                                                                                                                                                   │
+│ > 27 │   │   command(**options)                                                                                                                                                  │
+│   28 │   except HelpText as e:                                                                                                                                                   │
+│   29 │   │   console.info()                                                                                                                                                      │
+│   30 │   │   console.info(str(e))                                                                                                                                                │
+│                                                                                                                                                                                  │
+│ ┌──────────────────────────────────────────────────────── locals ─────────────────────────────────────────────────────────┐                                                      │
+│ │       command = <briefcase.platforms.windows.app.WindowsAppDevCommand object at 0x00000222B832D7F0>                     │                                                      │
+│ │       console = <briefcase.console.Console object at 0x00000222B4F2B0E0>                                                │                                                      │
+│ │             e = BriefcaseCommandError('Problem running app backendsim.')                                                │                                                      │
+│ │ extra_cmdline = []                                                                                                      │                                                      │
+│ │       options = {'appname': None, 'update_requirements': False, 'run_app': True, 'test_mode': False, 'passthrough': []} │                                                      │
+│ │     overrides = {}                                                                                                      │                                                      │
+│ │        result = 200                                                                                                     │                                                      │
+│ └─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘                                                      │
+│                                                                                                                                                                                  │
+│ C:\Python313\Lib\site-packages\briefcase\commands\dev.py:250 in __call__                                                                                                         │
+│                                                                                                                                                                                  │
+│   247 │   │   │   else:                                                                                                                                                          │
+│   248 │   │   │   │   self.console.info("Starting in dev mode...", prefix=app.app_name)                                                                                          │
+│   249 │   │   │   env = self.get_environment(app)                                                                                                                                │
+│ > 250 │   │   │   return self.run_dev_app(                                                                                                                                       │
+│   251 │   │   │   │   app,                                                                                                                                                       │
+│   252 │   │   │   │   env,                                                                                                                                                       │
+│   253 │   │   │   │   passthrough=[] if passthrough is None else passthrough,                                                                                                    │
+│                                                                                                                                                                                  │
+│ ┌─────────────────────────────────────────────────────────────────────────────── locals ───────────────────────────────────────────────────────────────────────────────┐         │
+│ │                 app = <org.example.backendsim v1.0.0 AppConfig>                                                                                                      │         │
+│ │             appname = None                                                                                                                                           │         │
+│ │      dist_info_path = WindowsPath('C:/Users/User/Backendev/src/backendsim.dist-info')                                                                                │         │
+│ │                 env = {'PYTHONPATH': 'C:\\Users\\User\\Backendev\\src', 'PYTHONMALLOC': 'default', 'PYTHONUNBUFFERED': '1', 'PYTHONDEVMODE': '1', 'PYTHONUTF8': '1'} │         │
+│ │             options = {}                                                                                                                                             │         │
+│ │         passthrough = []                                                                                                                                             │         │
+│ │             run_app = True                                                                                                                                           │         │
+│ │                self = <briefcase.platforms.windows.app.WindowsAppDevCommand object at 0x00000222B832D7F0>                                                            │         │
+│ │           test_mode = False                                                                                                                                          │         │
+│ │ update_requirements = False                                                                                                                                          │         │
+│ └──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘         │
+│                                                                                                                                                                                  │
+│ C:\Python313\Lib\site-packages\briefcase\commands\dev.py:168 in run_dev_app                                                                                                      │
+│                                                                                                                                                                                  │
+│   165 │   │   │   )                                                                                                                                                              │
+│   166 │   │   │                                                                                                                                                                  │
+│   167 │   │   │   # Start streaming logs for the app.                                                                                                                            │
+│ > 168 │   │   │   self._stream_app_logs(                                                                                                                                         │
+│   169 │   │   │   │   app,                                                                                                                                                       │
+│   170 │   │   │   │   popen=app_popen,                                                                                                                                           │
+│   171 │   │   │   │   clean_output=False,                                                                                                                                        │
+│                                                                                                                                                                                  │
+│ ┌─────────────────────────────────────────────────────────────────────────── locals ───────────────────────────────────────────────────────────────────────────┐                 │
+│ │         app = <org.example.backendsim v1.0.0 AppConfig>                                                                                                      │                 │
+│ │   app_popen = <Popen: returncode: 1 args: ['C:\\Python313\\python.exe', '-c', 'import runp...>                                                               │                 │
+│ │     cmdline = ['C:\\Python313\\python.exe', '-c', 'import runpy, sys;sys.path.pop(0);sys.argv.extend([]);runpy.run_module("backends'+41]                     │                 │
+│ │         env = {'PYTHONPATH': 'C:\\Users\\User\\Backendev\\src', 'PYTHONMALLOC': 'default', 'PYTHONUNBUFFERED': '1', 'PYTHONDEVMODE': '1', 'PYTHONUTF8': '1'} │                 │
+│ │ main_module = 'backendsim'                                                                                                                                   │                 │
+│ │     options = {}                                                                                                                                             │                 │
+│ │ passthrough = []                                                                                                                                             │                 │
+│ │        self = <briefcase.platforms.windows.app.WindowsAppDevCommand object at 0x00000222B832D7F0>                                                            │                 │
+│ └──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘                 │
+│                                                                                                                                                                                  │
+│ C:\Python313\Lib\site-packages\briefcase\commands\run.py:200 in _stream_app_logs                                                                                                 │
+│                                                                                                                                                                                  │
+│   197 │   │   │   │   # If we're monitoring an actual app (not just a log stream),                                                                                               │
+│   198 │   │   │   │   # and the app didn't exit cleanly, surface the error to the user.                                                                                          │
+│   199 │   │   │   │   if popen.poll() != 0:                                                                                                                                      │
+│ > 200 │   │   │   │   │   raise BriefcaseCommandError(f"Problem running app {app.app_name}.")                                                                                    │
+│   201 │   │                                                                                                                                                                      │
+│   202 │   │   except KeyboardInterrupt:                                                                                                                                          │
+│   203 │   │   │   pass  # Catch CTRL-C to exit normally                                                                                                                          │
+│                                                                                                                                                                                  │
+│ ┌────────────────────────────────────────────── locals ──────────────────────────────────────────────┐                                                                           │
+│ │          app = <org.example.backendsim v1.0.0 AppConfig>                                           │                                                                           │
+│ │ clean_filter = None                                                                                │                                                                           │
+│ │ clean_output = False                                                                               │                                                                           │
+│ │   log_filter = <briefcase.commands.run.LogFilter object at 0x00000222B832DE80>                     │                                                                           │
+│ │   log_stream = False                                                                               │                                                                           │
+│ │        popen = <Popen: returncode: 1 args: ['C:\\Python313\\python.exe', '-c', 'import runp...>    │                                                                           │
+│ │         self = <briefcase.platforms.windows.app.WindowsAppDevCommand object at 0x00000222B832D7F0> │                                                                           │
+│ └────────────────────────────────────────────────────────────────────────────────────────────────────┘                                                                           │
+└──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+BriefcaseCommandError: Problem running app backendsim.

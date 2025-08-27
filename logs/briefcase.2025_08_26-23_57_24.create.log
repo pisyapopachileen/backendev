@@ -1,0 +1,330 @@
+Date/Time:       2025-08-26 23:57:25 
+Command line:    C:\Python313\Scripts\briefcase create android
+
+OS Release:      Windows 11
+OS Version:      10.0.22621
+Architecture:    AMD64
+Platform:        Windows-11-10.0.22621-SP0
+
+Python exe:      C:\Python313\python.exe
+Python version:  3.13.5 (tags/v3.13.5:6cb20a2, Jun 11 2025, 16:15:46) [MSC v.1943 64 bit (AMD64)]
+Virtual env:     False
+Conda env:       False
+
+Briefcase:       0.3.25
+Target platform: android
+Target format:   gradle
+
+Environment Variables:
+	ALLUSERSPROFILE=C:\ProgramData
+	APPDATA=C:\Users\User\AppData\Roaming
+	COMMONPROGRAMFILES=C:\Program Files\Common Files
+	COMMONPROGRAMFILES(X86)=C:\Program Files (x86)\Common Files
+	COMMONPROGRAMW6432=C:\Program Files\Common Files
+	COMPUTERNAME=DESKTOP-9AGQR6R
+	COMSPEC=C:\Windows\system32\cmd.exe
+	DRIVERDATA=C:\Windows\System32\Drivers\DriverData
+	EFC_6476=0
+	FARGODATAPATH=C:\Users\User\Documents\My Games\Terraria\tModLoader\Dev
+	FPS_BROWSER_APP_PROFILE_STRING=Internet Explorer
+	FPS_BROWSER_USER_PROFILE_STRING=Default
+	HOMEDRIVE=C:
+	HOMEPATH=\Users\User
+	INTELLIJ IDEA=C:\Program Files\JetBrains\IntelliJ IDEA 2023.2.2\bin;
+	JAVA_HOME=C:\Java\jdk-21\bin
+	LOCALAPPDATA=C:\Users\User\AppData\Local
+	LOGONSERVER=\\DESKTOP-9AGQR6R
+	NUMBER_OF_PROCESSORS=6
+	OS=Windows_NT
+	PATH=C:\Python313\Scripts\;C:\Python313\;C:\Program Files\Eclipse Adoptium\jdk-17.0.8.7-hotspot\bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Python311\Scripts\;C:\Python311\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Java\jdk-21\bin\bin;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\dotnet\;C:\Program Files\Git\cmd;C:\Users\User\AppData\Local\Microsoft\WindowsApps;C:\Users\User\.dotnet\tools;C:\Users\User\AppData\Local\GitHubDesktop\bin;C:\Program Files\JetBrains\IntelliJ IDEA 2023.2.2\bin;;C:\Users\User\AppData\Local\JetBrains\Toolbox\scripts;C:\Users\User\.dotnet\tools;C:\Program Files\JetBrains\PyCharmCE 2025.1.1.1\bin;
+	PATHEXT=.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW
+	PROCESSOR_ARCHITECTURE=AMD64
+	PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 158 Stepping 10, GenuineIntel
+	PROCESSOR_LEVEL=6
+	PROCESSOR_REVISION=9e0a
+	PROGRAMDATA=C:\ProgramData
+	PROGRAMFILES=C:\Program Files
+	PROGRAMFILES(X86)=C:\Program Files (x86)
+	PROGRAMW6432=C:\Program Files
+	PROMPT=$P$G
+	PSMODULEPATH=C:\Program Files\WindowsPowerShell\Modules;C:\Windows\system32\WindowsPowerShell\v1.0\Modules
+	PUBLIC=C:\Users\Public
+	PYCHARM=C:\Program Files\JetBrains\PyCharmCE 2025.1.1.1\bin;
+	SESSIONNAME=Console
+	SYSTEMDRIVE=C:
+	SYSTEMROOT=C:\Windows
+	TEMP=C:\Users\User\AppData\Local\Temp
+	TMP=C:\Users\User\AppData\Local\Temp
+	USERDOMAIN=DESKTOP-9AGQR6R
+	USERDOMAIN_ROAMINGPROFILE=DESKTOP-9AGQR6R
+	USERNAME=User
+	USERPROFILE=C:\Users\User
+	WINDIR=C:\Windows
+	WOTGDATAPATH=C:\Users\User\Documents\My Games\Terraria\tModLoader\Dev
+
+pyproject.toml:
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "backendev"
+version = "1.0.0"
+description = "Симулятор бэкенд-разработчика"
+requires-python = ">=3.8"
+dependencies = [
+    "toga",
+    "scikit-learn",
+    "numpy"
+]
+
+[tool.briefcase]
+project_name = "Backendev"
+bundle = "org.example"
+version = "1.0.0"
+url = "https://github.com/yourname/backendev"
+license = "MIT"
+author = "Your Name"
+author_email = "your@email.com"
+
+[tool.briefcase.app.backendev]
+formal_name = "Backendev"
+description = "Симулятор бэкенд-разработчика"
+sources = ["src/Backendev"]
+requires = [
+    "scikit-learn",
+    "numpy"
+]
+
+[tool.briefcase.app.backendev.android]
+icon = "resources/icon.png"
+splash = "resources/splash.png"
+permissions = [
+    "INTERNET"
+]
+
+Briefcase Log:
+[23:34:44]                                                                                                                                                             config.py:666
+           *************************************************************************                                                                                   config.py:666
+           ** WARNING: License Definition for the Project is Deprecated           **                                                                                   config.py:666
+           *************************************************************************                                                                                   config.py:666
+                                                                                                                                                                       config.py:666
+               Briefcase now uses PEP 621 format for license definitions.                                                                                              config.py:666
+                                                                                                                                                                       config.py:666
+               Previously, the name of the license was assigned to the 'license'                                                                                       config.py:666
+               field in pyproject.toml. For PEP 621, the name of the license is                                                                                        config.py:666
+               assigned to 'license.text' or the name of the file containing the                                                                                       config.py:666
+               license is assigned to 'license.file'.                                                                                                                  config.py:666
+                                                                                                                                                                       config.py:666
+               The current configuration for the Project has a 'license' field                                                                                         config.py:666
+               that is specified as a string:                                                                                                                          config.py:666
+                                                                                                                                                                       config.py:666
+                   license = "MIT"                                                                                                                                     config.py:666
+                                                                                                                                                                       config.py:666
+               To use the PEP 621 format (and to remove this warning), specify that                                                                                    config.py:666
+               the LICENSE file contains the license for the Project:                                                                                                  config.py:666
+                                                                                                                                                                       config.py:666
+                   license.file = "LICENSE"                                                                                                                            config.py:666
+                                                                                                                                                                       config.py:666
+           *************************************************************************                                                                                   config.py:666
+[23:34:45]                                                                                                                                                               java.py:111
+           [Java JDK] Evaluating JAVA_HOME...                                                                                                                            java.py:111
+           JAVA_HOME=C:\Java\jdk-21\bin                                                                                                                                  java.py:112
+                                                                                                                                                                   subprocess.py:838
+           >>> Running Command:                                                                                                                                    subprocess.py:838
+           >>>     'C:\Java\jdk-21\bin\bin\javac' -version                                                                                                         subprocess.py:838
+           >>> Working Directory:                                                                                                                                  subprocess.py:838
+           >>>     C:\Users\User\Backendev                                                                                                                         subprocess.py:838
+                                                                                                                                                                         java.py:232
+           *************************************************************************                                                                                     java.py:232
+           ** WARNING: JAVA_HOME does not point to a JDK                          **                                                                                     java.py:232
+           *************************************************************************                                                                                     java.py:232
+                                                                                                                                                                         java.py:232
+               The location pointed to by the JAVA_HOME environment variable:                                                                                            java.py:232
+                                                                                                                                                                         java.py:232
+               C:\Java\jdk-21\bin                                                                                                                                        java.py:232
+                                                                                                                                                                         java.py:232
+               does not appear to be a JDK. It may be a Java Runtime Environment.                                                                                        java.py:232
+                                                                                                                                                                         java.py:232
+               If JAVA_HOME is a JDK, ensure it is the root directory of the JDK                                                                                         java.py:232
+               instance such that $JAVA_HOME/bin/javac is a valid filepath.                                                                                              java.py:232
+                                                                                                                                                                         java.py:232
+               Briefcase will proceed using its own JDK instance.                                                                                                        java.py:232
+                                                                                                                                                                         java.py:232
+           *************************************************************************                                                                                     java.py:232
+                                                                                                                                                                         java.py:246
+           [java] A Java 17 JDK was not found; downloading and installing...                                                                                             java.py:246
+           To use an existing JDK 17 instance, specify its root directory path in the JAVA_HOME environment variable.                                                    java.py:250
+                                                                                                                                                                         java.py:254
+[23:34:47] Downloading OpenJDK17U-jdk_x64_windows_hotspot_17.0.15_6.zip...                                                                                               file.py:227
+[23:35:07] Installing OpenJDK... started                                                                                                                                 java.py:285
+[23:35:10] Installing OpenJDK... done                                                                                                                                    java.py:285
+           Using JDK at C:\Users\User\AppData\Local\BeeWare\briefcase\Cache\tools\java17                                                                                 java.py:259
+                                                                                                                                                                  android_sdk.py:361
+           [android_sdk] The Android SDK was not found; downloading and installing...                                                                             android_sdk.py:361
+           To use an existing Android SDK instance, specify its root directory path in the ANDROID_HOME environment variable.                                     android_sdk.py:365
+                                                                                                                                                                  android_sdk.py:369
+           Downloading commandlinetools-win-13114758_latest.zip...                                                                                                       file.py:227
+[23:35:29] Installing Android SDK Command-Line Tools 19.0... started                                                                                              android_sdk.py:418
+[23:35:30] Installing Android SDK Command-Line Tools 19.0... done                                                                                                 android_sdk.py:418
+           Removing older Android SDK packages... started                                                                                                         android_sdk.py:457
+           Removing older Android SDK packages... done                                                                                                            android_sdk.py:457
+                                                                                                                                                                  android_sdk.py:598
+           The Android tools provided by Google have license terms that you must accept                                                                           android_sdk.py:598
+           before you may use those tools.                                                                                                                        android_sdk.py:598
+                                                                                                                                                                   subprocess.py:838
+           >>> Running Command:                                                                                                                                    subprocess.py:838
+           >>>     'C:\Users\User\AppData\Local\BeeWare\briefcase\Cache\tools\android_sdk\cmdline-tools\19.0\bin\sdkmanager.bat' --licenses                        subprocess.py:838
+           >>> Working Directory:                                                                                                                                  subprocess.py:838
+           >>>     C:\Users\User\Backendev                                                                                                                         subprocess.py:838
+           >>> Environment Overrides:                                                                                                                              subprocess.py:838
+           >>>     ANDROID_HOME=C:\Users\User\AppData\Local\BeeWare\briefcase\Cache\tools\android_sdk                                                              subprocess.py:838
+           >>>     ANDROID_SDK_ROOT=C:\Users\User\AppData\Local\BeeWare\briefcase\Cache\tools\android_sdk                                                          subprocess.py:838
+           >>>     JAVA_HOME=C:\Users\User\AppData\Local\BeeWare\briefcase\Cache\tools\java17                                                                      subprocess.py:838
+[23:57:21] >>> Return code: 0                                                                                                                                      subprocess.py:838
+                                                                                                                                                                   subprocess.py:838
+           Using Android SDK at C:\Users\User\AppData\Local\BeeWare\briefcase\Cache\tools\android_sdk                                                             android_sdk.py:375
+[23:57:22]                                                                                                                                                             create.py:937
+           [backendsim] Generating application template...                                                                                                             create.py:937
+                                                                                                                                                                       gradle.py:185
+           *************************************************************************                                                                                   gradle.py:185
+           ** WARNING: App does not define build_gradle_dependencies              **                                                                                   gradle.py:185
+           *************************************************************************                                                                                   gradle.py:185
+                                                                                                                                                                       gradle.py:185
+               The Android configuration for this app does not contain a                                                                                               gradle.py:185
+               `build_gradle_dependencies` definition. Briefcase will use a default                                                                                    gradle.py:185
+               value of:                                                                                                                                               gradle.py:185
+                                                                                                                                                                       gradle.py:185
+                   build_gradle_dependencies = [                                                                                                                       gradle.py:185
+                       "androidx.appcompat:appcompat:1.0.2",                                                                                                           gradle.py:185
+                       "androidx.constraintlayout:constraintlayout:1.1.3",                                                                                             gradle.py:185
+                       "androidx.swiperefreshlayout:swiperefreshlayout:1.1.0",                                                                                         gradle.py:185
+                   ]                                                                                                                                                   gradle.py:185
+                                                                                                                                                                       gradle.py:185
+               You should add this definition to the Android configuration                                                                                             gradle.py:185
+               of your project's pyproject.toml file. See:                                                                                                             gradle.py:185
+                                                                                                                                                                       gradle.py:185
+                   https://briefcase.readthedocs.io/en/stable/reference/platforms/android/gradle.html#build-gradle-dependencies                                        gradle.py:185
+                                                                                                                                                                       gradle.py:185
+               for more information.                                                                                                                                   gradle.py:185
+                                                                                                                                                                       gradle.py:185
+           *************************************************************************                                                                                   gradle.py:185
+                                                                                                                                                                       gradle.py:185
+           Using app template: https://github.com/beeware/briefcase-android-gradle-template.git, branch v0.3.25                                                         base.py:1241
+           Cloning template 'https://github.com/beeware/briefcase-android-gradle-template.git'...                                                                       base.py:1073
+[23:57:23] Using existing template (sha 1abe20417fa00e959de536295c6bd686c3d0b302, updated Mon Jul 28 09:20:28 2025)                                                     base.py:1146
+[23:57:24]                                                                                                                                                             create.py:952
+           [backendsim] Installing support package...                                                                                                                  create.py:952
+           No support package required.                                                                                                                                create.py:323
+                                                                                                                                                                       create.py:970
+           [backendsim] Installing application code...                                                                                                                 create.py:970
+           Installing src/backendsim... started                                                                                                                        create.py:734
+           Installing src/backendsim... errored                                                                                                                        create.py:734
+                                                                                                                                                                      __main__.py:42
+           Application source 'src/backendsim' does not exist.                                                                                                        __main__.py:43
+           Saving log... started                                                                                                                                      console.py:438
+
+Main thread traceback:
+┌─────────────────────────────────────────────────────────────────────── Traceback (most recent call last) ────────────────────────────────────────────────────────────────────────┐
+│ C:\Python313\Lib\site-packages\briefcase\__main__.py:27 in main                                                                                                                  │
+│                                                                                                                                                                                  │
+│   24 │   │   │   Path.cwd() / "pyproject.toml",                                                                                                                                  │
+│   25 │   │   │   overrides=overrides,                                                                                                                                            │
+│   26 │   │   )                                                                                                                                                                   │
+│ > 27 │   │   command(**options)                                                                                                                                                  │
+│   28 │   except HelpText as e:                                                                                                                                                   │
+│   29 │   │   console.info()                                                                                                                                                      │
+│   30 │   │   console.info(str(e))                                                                                                                                                │
+│                                                                                                                                                                                  │
+│ ┌─────────────────────────────────────────────── locals ────────────────────────────────────────────────┐                                                                        │
+│ │       command = <briefcase.platforms.android.gradle.GradleCreateCommand object at 0x000001BE2E15D7F0> │                                                                        │
+│ │       console = <briefcase.console.Console object at 0x000001BE2AD3B0E0>                              │                                                                        │
+│ │             e = MissingAppSources('src/backendsim')                                                   │                                                                        │
+│ │ extra_cmdline = []                                                                                    │                                                                        │
+│ │       options = {}                                                                                    │                                                                        │
+│ │     overrides = {}                                                                                    │                                                                        │
+│ │        result = 200                                                                                   │                                                                        │
+│ └───────────────────────────────────────────────────────────────────────────────────────────────────────┘                                                                        │
+│                                                                                                                                                                                  │
+│ C:\Python313\Lib\site-packages\briefcase\commands\create.py:1026 in __call__                                                                                                     │
+│                                                                                                                                                                                  │
+│   1023 │   │                                                                                                                                                                     │
+│   1024 │   │   state = None                                                                                                                                                      │
+│   1025 │   │   for _, app_obj in sorted(apps_to_create.items()):                                                                                                                 │
+│ > 1026 │   │   │   state = self.create_app(                                                                                                                                      │
+│   1027 │   │   │   │   app_obj,                                                                                                                                                  │
+│   1028 │   │   │   │   **full_options(state, options),                                                                                                                           │
+│   1029 │   │   │   )                                                                                                                                                             │
+│                                                                                                                                                                                  │
+│ ┌──────────────────────────────────────────────── locals ────────────────────────────────────────────────┐                                                                       │
+│ │              _ = 'backendsim'                                                                          │                                                                       │
+│ │            app = None                                                                                  │                                                                       │
+│ │       app_name = None                                                                                  │                                                                       │
+│ │        app_obj = <org.example.backendsim v1.0.0 AppConfig>                                             │                                                                       │
+│ │ apps_to_create = {'backendsim': <org.example.backendsim v1.0.0 AppConfig>}                             │                                                                       │
+│ │        options = {}                                                                                    │                                                                       │
+│ │           self = <briefcase.platforms.android.gradle.GradleCreateCommand object at 0x000001BE2E15D7F0> │                                                                       │
+│ │          state = None                                                                                  │                                                                       │
+│ └────────────────────────────────────────────────────────────────────────────────────────────────────────┘                                                                       │
+│                                                                                                                                                                                  │
+│ C:\Python313\Lib\site-packages\briefcase\commands\create.py:971 in create_app                                                                                                    │
+│                                                                                                                                                                                  │
+│    968 │   │   │   self.verify_app(app)                                                                                                                                          │
+│    969 │   │   │                                                                                                                                                                 │
+│    970 │   │   │   self.console.info("Installing application code...", prefix=app.app_name)                                                                                      │
+│ >  971 │   │   │   self.install_app_code(app=app)                                                                                                                                │
+│    972 │   │   │                                                                                                                                                                 │
+│    973 │   │   │   self.console.info("Installing requirements...", prefix=app.app_name)                                                                                          │
+│    974 │   │   │   self.install_app_requirements(app=app)                                                                                                                        │
+│                                                                                                                                                                                  │
+│ ┌────────────────────────────────────────────── locals ───────────────────────────────────────────────┐                                                                          │
+│ │         app = <org.example.backendsim v1.0.0 AppConfig>                                             │                                                                          │
+│ │ bundle_path = WindowsPath('C:/Users/User/Backendev/build/backendsim/android/gradle')                │                                                                          │
+│ │     options = {}                                                                                    │                                                                          │
+│ │        self = <briefcase.platforms.android.gradle.GradleCreateCommand object at 0x000001BE2E15D7F0> │                                                                          │
+│ └─────────────────────────────────────────────────────────────────────────────────────────────────────┘                                                                          │
+│                                                                                                                                                                                  │
+│ C:\Python313\Lib\site-packages\briefcase\commands\create.py:740 in install_app_code                                                                                              │
+│                                                                                                                                                                                  │
+│    737 │   │   │   │   │                                                                                                                                                         │
+│    738 │   │   │   │   │   # Install the new copy of the app code.                                                                                                               │
+│    739 │   │   │   │   │   if not original.exists():                                                                                                                             │
+│ >  740 │   │   │   │   │   │   raise MissingAppSources(src)                                                                                                                      │
+│    741 │   │   │   │   │   elif original.is_dir():                                                                                                                               │
+│    742 │   │   │   │   │   │   self.tools.shutil.copytree(original, target)                                                                                                      │
+│    743 │   │   │   │   │   else:                                                                                                                                                 │
+│                                                                                                                                                                                  │
+│ ┌───────────────────────────────────────────────────── locals ─────────────────────────────────────────────────────┐                                                             │
+│ │      app = <org.example.backendsim v1.0.0 AppConfig>                                                             │                                                             │
+│ │ app_path = WindowsPath('C:/Users/User/Backendev/build/backendsim/android/gradle/app/src/main/python')            │                                                             │
+│ │ original = WindowsPath('C:/Users/User/Backendev/src/backendsim')                                                 │                                                             │
+│ │     self = <briefcase.platforms.android.gradle.GradleCreateCommand object at 0x000001BE2E15D7F0>                 │                                                             │
+│ │  sources = ['src/backendsim']                                                                                    │                                                             │
+│ │      src = 'src/backendsim'                                                                                      │                                                             │
+│ │   target = WindowsPath('C:/Users/User/Backendev/build/backendsim/android/gradle/app/src/main/python/backendsim') │                                                             │
+│ └──────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘                                                             │
+└──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+MissingAppSources: Application source 'src/backendsim' does not exist.
+[23:57:25] Collecting extra information for log... started                                                                                                            console.py:473
+                                                                                                                                                                      console.py:477
+           Extra information:                                                                                                                                         console.py:478
+                                                                                                                                                                   subprocess.py:838
+           >>> Running Command:                                                                                                                                    subprocess.py:838
+           >>>     'C:\Users\User\AppData\Local\BeeWare\briefcase\Cache\tools\android_sdk\cmdline-tools\19.0\bin\sdkmanager.bat' --list_installed                  subprocess.py:838
+           >>> Working Directory:                                                                                                                                  subprocess.py:838
+           >>>     C:\Users\User\Backendev                                                                                                                         subprocess.py:838
+           >>> Environment Overrides:                                                                                                                              subprocess.py:838
+           >>>     ANDROID_HOME=C:\Users\User\AppData\Local\BeeWare\briefcase\Cache\tools\android_sdk                                                              subprocess.py:838
+           >>>     ANDROID_SDK_ROOT=C:\Users\User\AppData\Local\BeeWare\briefcase\Cache\tools\android_sdk                                                          subprocess.py:838
+           >>>     JAVA_HOME=C:\Users\User\AppData\Local\BeeWare\briefcase\Cache\tools\java17                                                                      subprocess.py:838
+           >>> Command Output:                                                                                                                                     subprocess.py:838
+           >>>     Loading package information...                                                                                                                  subprocess.py:838
+           >>>     Loading local repository...                                                                                                                     subprocess.py:838
+           >>>     [=========                              ] 25% Loading local repository...                                                                       subprocess.py:838
+           >>>     [=========                              ] 25% Fetch remote repository...                                                                        subprocess.py:838
+           >>>     [=======================================] 100% Fetch remote repository...                                                                       subprocess.py:838
+           >>>                                                                                                                                                     subprocess.py:838
+           >>>                                                                                                                                                     subprocess.py:838
+           >>> Return code: 0                                                                                                                                      subprocess.py:838
+                                                                                                                                                                   subprocess.py:838
+           Collecting extra information for log... done                                                                                                               console.py:473
